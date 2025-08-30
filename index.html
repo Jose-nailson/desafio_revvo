@@ -4,40 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leo Learning - Desafio Revvo</title>
-    <link rel="stylesheet" href="assets/css/main.css"> 
+    <link rel="stylesheet" href="frontend/assets/css/main.css"> 
 </head>
 <body>
     <!--Cabeçalho-->
-    <header class="header">
-        <div class="header-logo">
-            <img src="frontend/assets/images/logo.png">
+    <header class="cabecalho">
+        <div class="cabecalho-logo">
+            <img src="frontend/assets/images/logo.png" alt="Logo LEO">
         </div>
-        
-        <div class="header-search">
+
+        <div class="cabecalho-busca">
             <input type="text" placeholder="Pesquisar cursos...">
-            <button type="submit ">
-                <img src="frontend/assets/images/icone-busca.png" alt="ícone de busca">
+            <button type="submit">
+                <img src="frontend/assets/images/icone-busca.png" alt="Ícone de busca">
             </button>
         </div>
 
-        <div class="header-user">
+        <div class="cabecalho-usuario">
             <a href="#">
-                <img src="frontend/assets/images/perfil-usuario.png" alt="Foto de perfil do usuário">
-                <span>Leandro Ribeiro</span>
+                <img src="frontend/assets/images/perfil-usuario.jpg" alt="Foto de perfil do usuário">
+                <span>John Doe</span>
             </a>
         </div>
     </header>
 
-    <main class="main-content">
-        <section class="slideshow">
+    <!--slides e detalhamento dos cursos-->
+  <main class="conteudo-principal">
+        <section class="carrossel">
+            <img src="frontend/assets/images/fundo-slideshow.jpg" alt="Pessoa escrevendo no caderno">
+            
+            <div class="conteudo-slide">
+                <h1>LOREM IPSUM</h1>
+                <p>
+                    Aenean lacinia bibendum nulla sed consectetur. Cum
+                    sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus.
+                </p>
+                <a href="#" class="btn btn-primario">VER CURSO</a>
+            </div>
 
+            <button class="btn-anterior-slide">&#10094;</button>
+            <button class="btn-proximo-slide">&#10095;</button>
         </section>
-        <section class="courses">
 
+        <section class="cursos">
+            <h2>MEUS CURSOS</h2>
+            <div class="cursos-grid">
+                <div class="curso-cartao">
+                    <img src="frontend/assets/images/course-thumb.jpg" alt="Miniatura do Curso">
+                    <div class="curso-info">
+                        <h3>PELLENTESQUE MALESUADA</h3>
+                        <p>Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
+                        <a href="#" class="btn btn-secundario">VER CURSO</a>
+                    </div>
+                </div>
+
+                <div class="curso-cartao curso-cartao-adicionar">
+                    <img src="frontend/assets/images/icone-adicionar-curso.png" alt="Adicionar Curso">
+                    <h3>ADICIONAR CURSO</h3>
+                </div>
+            </div>
         </section>
     </main>
-    <footer class="footer">
 
+    <footer class="rodape">
+        <div class="logo-rodape">
+            <img src="frontend/assets/images/logo.png" alt="Logo LEO">
+        </div>
+        <div class="contato-rodape">
+            <h4># CONTATO</h4>
+            <P>(85) 98789-3454</P>
+            <P>contato@leolearning.com</P>
+        </div>
+        <div class="rodape-social">
+            <h4>// REDES SOCIAIS </h4>
+            <a href="https://x.com/">
+                 <img src="frontend/assets/images/twitter.png" class="social-icones" alt="Ícone do Twitter">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="frontend/assets/images/youtube.png"  class="social-icones" alt="Ícone do YouTube">
+            </a>
+            <a href="https://br.pinterest.com/">
+                <img src="frontend/assets/images/pinterest.png" class="social-icones" alt="Ícone do Pinterest">
+            </a>
+        </div>
     </footer>
+
+     <section class="modal">
+        <div class="modal-conteudo">
+            <span class="modal-btn-fechar">&times;</span>
+            <img src="frontend/assets/images/ilustacao-modal.png" alt="Ilustração de escritório">
+            <div class="modal-texto">
+                <h2>EGESTAS TORTOR VULPUTATE</h2>
+                <p>
+                    Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. 
+                    Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Cras
+                </p>
+                <button class="btn btn-modal">INSCREVA-SE</button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
