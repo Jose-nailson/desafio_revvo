@@ -12,26 +12,31 @@
         <div class="cabecalho-logo">
             <img src="frontend/assets/images/logo.png" alt="Logo LEO">
         </div>
+        <div class="cabecalho-info">
+            <div class="cabecalho-busca">
+                <input type="text" placeholder="Pesquisar cursos...">
+                <button type="submit">
+                    <img src="frontend/assets/images/icone-busca.png" alt="Ícone de busca">
+                </button>
+            </div>
 
-        <div class="cabecalho-busca">
-            <input type="text" placeholder="Pesquisar cursos...">
-            <button type="submit">
-                <img src="frontend/assets/images/icone-busca.png" alt="Ícone de busca">
-            </button>
-        </div>
-
-        <div class="cabecalho-usuario">
-            <a href="#">
-                <img src="frontend/assets/images/perfil-usuario.jpg" alt="Foto de perfil do usuário">
-                <span>John Doe</span>
-            </a>
+            <div class="cabecalho-usuario">
+                <a href="#" class="cabecalho-usuario-link">
+                    <img src="frontend/assets/images/perfil-usuario.png" alt="Foto de perfil do usuário">
+                    <div class="cabecalho-usuario-texto">
+                        <span>seja bem-vindo</span>
+                        <br>
+                        <span>John Doe</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </header>
 
-    <!--slides e detalhamento dos cursos-->
+    <!--slides e detalhamento dos meus cursos-->
   <main class="conteudo-principal">
         <section class="carrossel">
-            <img src="frontend/assets/images/fundo-slideshow.jpg" alt="Pessoa escrevendo no caderno">
+            <img src="frontend/assets/images/fundo-slideshow.png" alt="Pessoa escrevendo no caderno">
             
             <div class="conteudo-slide">
                 <h1>LOREM IPSUM</h1>
@@ -40,55 +45,123 @@
                     sociis natoque penatibus et magnis dis parturient montes,
                     nascetur ridiculus mus.
                 </p>
-                <a href="#" class="btn btn-primario">VER CURSO</a>
+                <a href="#" class="btn-primario">VER CURSO</a>
             </div>
 
             <button class="btn-anterior-slide">&#10094;</button>
             <button class="btn-proximo-slide">&#10095;</button>
+            <div class="carrossel-indicadores">
+                <span class="ponto ativo"></span>
+                <span class="ponto"></span>
+                <span class="ponto"></span>
+            </div>
         </section>
 
         <section class="cursos">
-            <h2>MEUS CURSOS</h2>
-            <div class="cursos-grid">
-                <div class="curso-cartao">
-                    <img src="frontend/assets/images/course-thumb.jpg" alt="Miniatura do Curso">
-                    <div class="curso-info">
-                        <h3>PELLENTESQUE MALESUADA</h3>
-                        <p>Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
-                        <a href="#" class="btn btn-secundario">VER CURSO</a>
-                    </div>
-                </div>
+            <div class="curso-container"></div>
+                <h2>MEUS CURSOS</h2>
+                <div class="cursos-grid">
+                        <div class="curso-cartao">
+                            <img src="frontend/assets/images/course-thumb.png" alt="Miniatura do Curso">
+                            <div class="curso-info">
+                                <h3>PELLENTESQUE MALESUADA</h3>
+                                <p>Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
+                                <a href="#" class="btn-secundario">VER CURSO</a>
+                            </div>
+                        </div>
 
-                <div class="curso-cartao curso-cartao-adicionar">
-                    <img src="frontend/assets/images/icone-adicionar-curso.png" alt="Adicionar Curso">
-                    <h3>ADICIONAR CURSO</h3>
+                        <div class="curso-cartao">
+                            <img src="frontend/assets/images/course-thumb.png" alt="Miniatura do Curso">
+                            <div class="curso-info">
+                                <h3>PELLENTESQUE MALESUADA</h3>
+                                <p>Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
+                                <a href="#" class="btn-secundario">VER CURSO</a>
+                            </div>
+                        </div>
+
+                        <div class="curso-cartao">
+                            <img src="frontend/assets/images/course-thumb.png" alt="Miniatura do Curso">
+                            <div class="curso-info">
+                                <h3>PELLENTESQUE MALESUADA</h3>
+                                <p>Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
+                                <a href="#" class="btn-secundario">VER CURSO</a>
+                            </div>
+                        </div>
+
+                        <div class="curso-cartao">
+                            <img src="frontend/assets/images/course-thumb.png" alt="Miniatura do Curso">
+                            <div class="curso-info">
+                                <h3>PELLENTESQUE MALESUADA</h3>
+                                <p>Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
+                                <a href="#" class="btn-secundario">VER CURSO</a>
+                            </div>
+                        </div>
+
+                        <div class="curso-cartao">
+                            <img src="frontend/assets/images/course-thumb.png" alt="Miniatura do Curso">
+                            <div class="curso-info">
+                                <h3>PELLENTESQUE MALESUADA</h3>
+                                <p>Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
+                                <a href="#" class="btn-secundario">VER CURSO</a>
+                            </div>
+                        </div>
+
+                        <div class="curso-cartao">
+                            <img src="frontend/assets/images/course-thumb.png" alt="Miniatura do Curso">
+                            <div class="curso-info">
+                                <h3>PELLENTESQUE MALESUADA</h3>
+                                <p>Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
+                                <a href="#" class="btn-secundario">VER CURSO</a>
+                            </div>
+                        </div>
+
+                        <div class="curso-cartao">
+                            <img src="frontend/assets/images/course-thumb.png" alt="Miniatura do Curso">
+                            <div class="curso-info">
+                                <h3>PELLENTESQUE MALESUADA</h3>
+                                <p>Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue.</p>
+                                <a href="#" class="btn-secundario">VER CURSO</a>
+                            </div>
+                        </div>
+
+                    <div class="curso-cartao curso-cartao-adicionar">
+                        <img src="frontend/assets/images/icone-adiciona-curso.png" class="" alt="Adicionar Curso">
+                        <h3>ADICIONAR CURSO</h3>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="rodape">
-        <div class="logo-rodape">
-            <img src="frontend/assets/images/logo.png" alt="Logo LEO">
-        </div>
-        <div class="contato-rodape">
-            <h4># CONTATO</h4>
-            <P>(85) 98789-3454</P>
-            <P>contato@leolearning.com</P>
-        </div>
-        <div class="rodape-social">
-            <h4>// REDES SOCIAIS </h4>
-            <a href="https://x.com/">
-                 <img src="frontend/assets/images/twitter.png" class="social-icones" alt="Ícone do Twitter">
-            </a>
-            <a href="https://www.youtube.com/">
-                <img src="frontend/assets/images/youtube.png"  class="social-icones" alt="Ícone do YouTube">
-            </a>
-            <a href="https://br.pinterest.com/">
-                <img src="frontend/assets/images/pinterest.png" class="social-icones" alt="Ícone do Pinterest">
-            </a>
-        </div>
-    </footer>
+
+    <!--Rodape contendo o contato e o link das minhas redes sociais-->
+<footer class="rodape">
+  <div class="logo-rodape">
+      <img src="frontend/assets/images/logo.png" alt="Logo LEO">
+      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+  </div>
+
+  <div class="contato-rodape">
+      <h4>// CONTATO</h4>
+      <p>(85) 98789-3454</p>
+      <p>contato@leolearning.com</p>
+  </div>
+
+  <div class="rodape-social">
+      <h4>// REDES SOCIAIS</h4>
+      <div class="social-icones">
+          <a href="https://x.com/">
+              <img src="frontend/assets/images/twitter.png" alt="Twitter">
+          </a>
+          <a href="https://www.youtube.com/">
+              <img src="frontend/assets/images/youtube.png" alt="YouTube">
+          </a>
+          <a href="https://br.pinterest.com/">
+              <img src="frontend/assets/images/pinterest.png" alt="Pinterest">
+          </a>
+      </div>
+  </div>
+</footer>
 
      <section class="modal">
         <div class="modal-conteudo">

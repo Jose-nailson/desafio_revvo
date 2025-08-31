@@ -1,0 +1,85 @@
+.cursos{
+    padding: 40px;
+    h2{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+.cursos-grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        
+        .cursos-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        @media (max-width: 1200px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+
+.curso-cartao {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .curso-info{
+        padding: 15px;
+    }
+    h3{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+        color: $cor-texto;
+    }
+    p{
+        font-size: 14px;
+        color:#666;
+        margin-bottom: 15px;
+    }
+    .btn-secundario{
+        display: inline-block;
+        background-color: $cor-primaria;
+        color: #fff;
+        border: 2px solid c$cor-primaria;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+.curso-cartao-adicionar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: none;
+}

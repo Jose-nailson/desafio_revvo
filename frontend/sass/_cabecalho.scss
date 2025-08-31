@@ -1,0 +1,76 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: $cor-texto;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 100;
+}
+
+.cabecalho-info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.cabecalho-logo img {
+    height: 30px;
+}
+
+.cabecalho-busca {
+    display: flex;
+    align-items: center;
+
+    input {
+        background-color: #f2f2f2;
+        border: none;
+        border-radius: 50px;
+        padding: 8px 15px;
+        width: 300px;
+        font-size: 14px;
+        outline: none;
+        color: $cor-texto;
+    }
+    
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        right: 35px;
+        img {
+            height: 18px;
+        }
+    }
+}
+
+.cabecalho-usuario-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $cor-texto;
+}
+
+.cabecalho-usuario-texto {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-right: 10px;
+}
+
+.cabecalho-usuario-link img:first-child {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.cabecalho-dropdown {
+    height: 10px;
+}
+
+.cabecalho-usuario {
+    display: flex;
+    align-items: center;
+}
