@@ -35,27 +35,45 @@
 
     <!--slides e detalhamento dos meus cursos-->
   <main class="conteudo-principal">
-        <section class="carrossel">
-            <img src="frontend/assets/images/fundo-slideshow.png" alt="Pessoa escrevendo no caderno">
-            
-            <div class="conteudo-slide">
-                <h1>LOREM IPSUM</h1>
-                <p>
-                    Aenean lacinia bibendum nulla sed consectetur. Cum
-                    sociis natoque penatibus et magnis dis parturient montes,
-                    nascetur ridiculus mus.
-                </p>
-                <a href="#" class="btn-primario">VER CURSO</a>
-            </div>
+            <section class="carrossel">
+                <div class="slide ativo" ">
+                <img src="/frontend/assets/images/fundo-slideshow.png" alt="Pessoa escrevendo no caderno">
+                    <div class="conteudo-slide">
+                        <h1>LOREM IPSUM</h1>
+                        <p>
+                            Aenean lacinia bibendum nulla sed consectetur.
+                        </p>
+                        <a href="#" class="btn btn-primario">VER CURSO</a>
+                    </div>
+                </div>
+                
+                <div class="slide ativo" >
+                    <img src="/frontend/assets/images/fundo-slideshow-2.png" alt="Outra imagem de fundo">
+                    <div class="conteudo-slide">
+                        <h1>SEGUNDO SLIDE</h1>
+                        <p>Conteúdo do segundo slide aqui...</p>
+                        <a href="#" class="btn btn-primario">DETALHES</a>
+                    </div>
+                </div>
+                
+                <div class="slide ativo" >
+                    <img src="/frontend/assets/images/fundo-slideshow.png" alt="Mais uma imagem de fundo">
+                    <div class="conteudo-slide">
+                        <h1>TERCEIRO SLIDE</h1>
+                        <p>Conteúdo do terceiro slide aqui...</p>
+                        <a href="#" class="btn btn-primario">CONHECER</a>
+                    </div>
+                </div>
 
-            <button class="btn-anterior-slide">&#10094;</button>
-            <button class="btn-proximo-slide">&#10095;</button>
-            <div class="carrossel-indicadores">
-                <span class="ponto ativo"></span>
-                <span class="ponto"></span>
-                <span class="ponto"></span>
-            </div>
-        </section>
+                <button class="btn-anterior-slide">&#10094;</button>
+                <button class="btn-proximo-slide">&#10095;</button>
+
+                <div class="carrossel-indicadores">
+                    <span class="ponto ativo"></span>
+                    <span class="ponto"></span>
+                    <span class="ponto"></span>
+                </div>
+            </section>
 
         <section class="cursos">
             <div class="curso-container"></div>
@@ -177,5 +195,8 @@
             </div>
         </div>
     </section>
+
+    <script src="frontend/assets/js/modal.js"></script>
+        <script src="frontend/assets/js/slideshow.js"></script>
 </body>
 </html>
