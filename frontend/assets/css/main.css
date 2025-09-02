@@ -90,21 +90,20 @@ body {
   position: relative;
   height: 350px;
   overflow: hidden;
-  /* apenas o slide ativo vira flex (verticalmente centralizado) */
   /* fundo */
 }
 .carrossel .slide {
   position: absolute;
-  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  inset: 0;
   width: 100%;
   height: 100%;
-  display: none; /* todos começam escondidos */
+  display: none;
 }
 .carrossel .slide.ativo {
   display: flex;
-  align-items: center; /* centraliza VERTICALMENTE */
-  justify-content: flex-start; /* mantém à esquerda */
-  padding-inline: 50px; /* respiro nas laterais */
+  align-items: center;
+  justify-content: flex-start;
+  padding-inline: 50px;
   box-sizing: border-box;
 }
 .carrossel .slide > img {
@@ -120,8 +119,8 @@ body {
   position: relative;
   z-index: 2;
   max-width: 600px;
-  padding: 20px 30px; /* menos padding interno */
-  margin-top: 100px; /* espaço do topo */
+  padding: 20px 30px;
+  margin-top: 100px;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   color: #f4f4f4;
@@ -323,4 +322,82 @@ body {
 }
 .rodape-social .social-icones img:hover {
   filter: grayscale(0%);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-conteudo {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.modal-btn-fechar {
+  position: absolute;
+  top: -15px; /* Posição para o botão ficar fora da caixa */
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  color: #ff0000; /* Cor do X em vermelho */
+  font-size: 24px;
+  line-height: 25px; /* Alinha o X verticalmente */
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+.modal-btn-fechar:hover {
+  transform: scale(1.1);
+}
+
+.modal-conteudo img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.modal-texto h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.modal-texto p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.btn-modal {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.btn-modal:hover {
+  background-color: #0056b3;
 }

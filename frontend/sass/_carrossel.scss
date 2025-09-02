@@ -5,18 +5,18 @@
 
   .slide {
     position: absolute;
-    inset: 0;           /* top:0; right:0; bottom:0; left:0 */
+    inset: 0;           
     width: 100%;
     height: 100%;
-    display: none;      /* todos começam escondidos */
+    display: none;      
   }
 
-  /* apenas o slide ativo vira flex (verticalmente centralizado) */
+  
   .slide.ativo {
     display: flex;
-    align-items: center;        /* centraliza VERTICALMENTE */
-    justify-content: flex-start;/* mantém à esquerda */
-    padding-inline: 50px;       /* respiro nas laterais */
+    align-items: center;       
+    justify-content: flex-start;
+    padding-inline: 50px;       
     box-sizing: border-box;
   }
 
@@ -35,15 +35,22 @@
     position: relative;
     z-index: 2;
     max-width: 600px;
-    padding: 20px 30px;        /* menos padding interno */
-    margin-top: 100px;          /* espaço do topo */
+    padding: 20px 30px;        
+    margin-top: 100px;          
     background: rgba(0,0,0,.6);
     border-radius: 8px;
     color: $cor-texto-claro;
     text-align: left;
 
-    h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    p  { font-size: 1rem; line-height: 1.5; margin-bottom: 20px; }
+    h1 {
+        font-size: 2.5rem; 
+        margin-bottom: 10px; 
+    }
+    p  { 
+        font-size: 1rem; 
+        line-height: 1.5; 
+        margin-bottom: 20px; 
+    }
 
     .btn-primario {
       background: transparent;
@@ -54,7 +61,10 @@
       text-decoration: none;
       transition: .3s;
       border-radius: 50px;
-      &:hover { background: $cor-texto-claro; color: $cor-texto; }
+      &:hover { 
+        background: $cor-texto-claro; 
+        color: $cor-texto; 
+        }
     }
   }
 
