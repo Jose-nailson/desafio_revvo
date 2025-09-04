@@ -77,10 +77,6 @@ body {
   margin-right: 10px;
 }
 
-.cabecalho-dropdown {
-  height: 10px;
-}
-
 .cabecalho-usuario {
   display: flex;
   align-items: center;
@@ -90,7 +86,6 @@ body {
   position: relative;
   height: 350px;
   overflow: hidden;
-  /* fundo */
 }
 .carrossel .slide {
   position: absolute;
@@ -200,26 +195,6 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-.cursos-grid .cursos-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-@media (max-width: 1200px) {
-  .cursos-grid .cursos-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 768px) {
-  .cursos-grid .cursos-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 480px) {
-  .cursos-grid .cursos-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 .curso-cartao {
   background-color: #fff;
@@ -227,6 +202,10 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+.curso-cartao:hover {
+  transform: translateY(-5px);
 }
 .curso-cartao img {
   width: 100%;
@@ -250,7 +229,6 @@ body {
   display: inline-block;
   background-color: #1a6d3f;
   color: #fff;
-  border: 2px solid c #1a6d3f;
   padding: 10px 20px;
   text-transform: uppercase;
   text-decoration: none;
@@ -260,7 +238,7 @@ body {
   transition: all 0.3s ease;
 }
 .curso-cartao .btn-secundario:hover {
-  opacity: 0.8;
+  background-color: #145a32;
 }
 
 .curso-cartao-adicionar {
@@ -272,6 +250,18 @@ body {
   cursor: pointer;
   background-color: transparent;
   box-shadow: none;
+  transition: all 0.3s ease;
+}
+.curso-cartao-adicionar:hover {
+  border-color: #1a6d3f;
+  background-color: rgba(26, 109, 63, 0.1);
+}
+.curso-cartao-adicionar img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.curso-cartao-adicionar h3 {
+  color: #666;
 }
 
 .rodape {
@@ -350,16 +340,16 @@ body {
 
 .modal-btn-fechar {
   position: absolute;
-  top: -15px; /* Posição para o botão ficar fora da caixa */
+  top: -15px;
   right: -15px;
   width: 30px;
   height: 30px;
   background-color: #fff;
   border-radius: 50%;
   border: 2px solid #ccc;
-  color: #ff0000; /* Cor do X em vermelho */
+  color: #ff0000;
   font-size: 24px;
-  line-height: 25px; /* Alinha o X verticalmente */
+  line-height: 25px;
   text-align: center;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -400,4 +390,90 @@ body {
 }
 .btn-modal:hover {
   background-color: #0056b3;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 1200px) {
+  .cursos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .cabecalho {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+  
+  .cabecalho-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .cabecalho-busca input {
+    width: 200px;
+  }
+  
+  .cursos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .rodape {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    padding: 30px;
+  }
+  
+  .carrossel .conteudo-slide {
+    margin-top: 50px;
+    padding: 15px 20px;
+  }
+  
+  .carrossel .conteudo-slide h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cabecalho-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cabecalho-busca {
+    width: 100%;
+  }
+  
+  .cabecalho-busca input {
+    width: 100%;
+  }
+  
+  .cursos {
+    padding: 20px;
+  }
+  
+  .cursos-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .carrossel {
+    height: 300px;
+  }
+  
+  .carrossel .conteudo-slide {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 90%;
+  }
+  
+  .carrossel .conteudo-slide h1 {
+    font-size: 1.5rem;
+  }
+  
+  .carrossel .btn-anterior-slide, 
+  .carrossel .btn-proximo-slide {
+    font-size: 30px;
+  }
 }
